@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet/less" type="text/css" href="styles.less">
+        <script src="less-1.0.41.min.js"></script>
+    </head>
+    <body>
+
+    <div id="toolbar" class="shrunk">
+        <a id="toolbar-open" class="icon ui-icon-wrench"></a>
+        <a id="toolbar-new-widget" class="icon ui-icon-plus" title="new widget"></a>
+    </div>
+
+    <div id="mydesk">
+        <div id="window-options" style="display:none">
+            <a id="window-options-move" class="icon ui-icon-arrow-4" title="move"></a>
+            <a id="window-options-delete" class="icon ui-icon-trash" title="delete"></a>
+        </div>
+    </div>
+
+    <div id="overlay" style="display:none"></div>
+
+    <div id="dialog-container" style="display: none"></div>
+    <div id="dialog-new-widget" class="dialog" style="display: none">
+        can haz details of new widget please
+
+        <input type="text" name="width" value="2"/> 
+        X
+        <input type="text" name="height" value="2"/>
+        <br/>
+        <input type="button" name="create" value="create"/>
+    </div>
+
+    <script type="text/javascript" src="jquery-1.5.1.js"></script>
+    <script type="text/javascript" src="jquery.ui.core.js"></script>
+    <script type="text/javascript" src="jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="jquery.ui.position.js"></script>-
+    <script type="text/javascript" src="jquery.effects.core.js"></script>-
+    <script type="text/javascript" src="jsdeskgrid.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
