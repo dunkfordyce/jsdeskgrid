@@ -149,7 +149,7 @@ Win.prototype.move_to = function(left, top, ctx) {
     }
 
     if( ++ctx.recur > 100 ) { throw "its broken jim"; }
-    ctx.done[this.options.id] = true;
+    //ctx.done[this.options.id] = true;
 
     o.left = left;
     o.top = top;
@@ -160,7 +160,7 @@ Win.prototype.move_to = function(left, top, ctx) {
     });
 
     $.each(this.owner.windows, function(idx, win) {
-        if( ctx.done[win.options.id] ) { return; }
+        if( win === self ) /*ctx.done[win.options.id] )*/ { return; }
         var ow = win.options;
         if( left+o.width >= ow.left
          && left < ow.left+ow.width 
